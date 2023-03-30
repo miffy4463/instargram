@@ -17,7 +17,8 @@
 						id="userProfileImageInput" />
 				</form>
 
-				<img class="profile-image" src="/images/person.jpeg" id="userProfileImage" />
+				<img class="profile-image" src="#"
+					onerror="this.src='/images/person.jpeg'" id="userProfileImage" />
 			</div>
 		</div>
 		<!--유저이미지end-->
@@ -131,7 +132,7 @@
 
 			<div class="subscribe__item" id="subscribeModalItem-1">
 				<div class="subscribe__img">
-					<img src="#" src="/images/person.jpeg"/>
+					<img src="#" onerror="this.src='/images/person.jpeg'"/>
 				</div>
 				<div class="subscribe__text">
 					<h2>love</h2>
@@ -144,7 +145,7 @@
 
 			<div class="subscribe__item" id="subscribeModalItem-2">
 				<div class="subscribe__img">
-					<img src="#" src="/images/person.jpeg"/>
+					<img src="#" onerror="this.src='/images/person.jpeg'"/>
 				</div>
 				<div class="subscribe__text">
 					<h2>ssar</h2>

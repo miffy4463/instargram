@@ -13,7 +13,7 @@
 			<!--프로필셋팅 아이디영역-->
 			<div class="content-item__01">
 				<div class="item__img">
-					<img src="/images/person.jpeg"/>
+					<img src="#" onerror="this.src='/images/person.jpeg'" />
 				</div>
 				<div class="item__username">
 					<h2>${principal.user.username}</h2>
@@ -40,7 +40,7 @@
 				<div class="content-item__04">
 					<div class="item__title">패스워드</div>
 					<div class="item__input">
-						<input type="password" name="password" placeholder="패스워드"/>
+						<input type="password" name="password" placeholder="패스워드"  />
 					</div>
 				</div>
 				<div class="content-item__05">
@@ -74,7 +74,7 @@
 				<div class="content-item__09">
 					<div class="item__title">전회번호</div>
 					<div class="item__input">
-						<input type="text" name="phone" placeholder="전화번호"
+						<input type="text" name="tel" placeholder="전화번호"
 							value="${principal.user.phone}" />
 					</div>
 				</div>
@@ -89,7 +89,7 @@
 				<div class="content-item__11">
 					<div class="item__title"></div>
 					<div class="item__input">
-						<button type="button" onclick="update('${principal.user.id}')">제출</button>
+						<button>제출</button>
 					</div>
 				</div>
 				<!--제출버튼end-->
