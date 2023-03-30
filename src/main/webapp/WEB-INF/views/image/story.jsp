@@ -11,8 +11,7 @@
 			<div class="story-list__item">
 				<div class="sl__item__header">
 					<div>
-						<img class="profile-image" src="#"
-							onerror="this.src='/images/person.jpeg'" />
+						<img class="profile-image" src="/images/person.jpeg"/>
 					</div>
 					<div>TherePrograming</div>
 				</div>
