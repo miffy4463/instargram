@@ -13,6 +13,10 @@ function update(userId, event) {
         console.log("성공", res);
         location.href = `/user/${userId}`;
     }).fail(error => { // Http Status 200 번대 아니면 fail
-        alert(JSON.stringify(error.responseJSON.data));
+        if (error.data == null) {
+            alert(error.responseJSON.message);
+        } else {
+            alert(JSON.stringify(error.responseJSON.data));
+        }
     });
 }
